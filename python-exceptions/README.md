@@ -1,0 +1,1 @@
+Like everywhere else even in python there are exception
