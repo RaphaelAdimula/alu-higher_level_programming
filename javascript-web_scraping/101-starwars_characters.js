@@ -17,3 +17,12 @@ function printCharacters (characters, idx) {
     }
   });
 }
+
+request(url, (err, res, body) => {
+  if (err) {
+    console.log(err);
+  } else {
+    const characters = JSON.parse(body).characters;
+    printCharacters(characters, 0);
+  }
+});
